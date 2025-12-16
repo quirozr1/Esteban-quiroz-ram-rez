@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La esquina del sabor</title>
+    <link rel="stylesheet" href="./Estilos/Cocina.css">
+</head>
+<body>
+    <!-- En el header va el logo, el menú y el banner -->
+     <header>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Receta colombiana</a></li>
+                <li><a href="">Receta Mexicana</a></li>
+                <li><a href="">Receta Española</a></li>
+            </ul>
+        </nav>
+        <!-- Banner -->
+         <img class="Banner" src="./Imagenes/cocinahermosa.jpg" alt="Cocina">
+     </header>
+
+     <!-- Primera sesión con video y artículo -->
+    <section class="featured">
+
+    <!-- Pegamos el iframe del video que copiamos (ver instructivo) -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P8h3b_ICg5A" 
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    <!-- Agregar el artículo -->
+
+        <article class="ft-articulo">
+            <h1>Recetas del mundo</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                inventore blanditiis vero distinctio sunt voluptas quis aliquam
+                provident? Adipisci ea exercitationem suscipit qui non ab voluptas
+                excepturi amet doloremque in voluptate, magni dicta perspiciatis
+                saepe?
+            </p>
+
+            <!-- Crear el contenedor div y el botón -->
+            <div class="boton-container">
+                <!-- Colocar el div dentro con el a href para que cuando la manito se pase se ilumine el botón -->
+                <a href="#">
+                    <div class="boton">Mas Info</div>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Articulo 2 -->
+     <section>
+        <article>
+            <!-- Imagen o contenido multimedia -->
+             <figure class="Art-image">
+                <img src="./Imagenes/ENSALADA2.jpg" alt="ENSALADA">
+             </figure>
+
+             <div class="Art-cont">
+                <h2>10 Recetas deliciosas para la navidad</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis maiores voluptatum quasi incidunt et, magnam, velit nihil architecto accusantium mollitia totam distinctio sint consectetur, tempora harum! Error, possimus rem!
+                </p>
+             </div>
+        </article>
+
+        <!-- Articulo 3 -->
+         <article>
+            <figure class="Art-image">
+                <img src="./Imagenes/ENSALADA.jpg" alt="ENSALADA2">
+            </figure>
+
+            <div class="Art-cont">
+                <h1>Comida Saludable</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid magni totam, ea, amet explicabo consequatur eligendi ipsam quis sequi obcaecati quibusdam quidem atque voluptatem iste in, suscipit fugiat aperiam tempore.
+                </p>
+            </div>
+         </article>
+     </section>
+</body>
+</html>

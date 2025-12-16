@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Formulario.css">
+</head>
+<body>
+    <form action="registrar.jsp" method="post">
+        <H1>Formulario de Registro de clientes</H1>
+        <label for="Nombre: ">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" required minlength="3" maxlength="10" title="El nombre debe tener entre 3 y 10 letras">
+        <br>
+        <label for="Appelido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" pattern="[A-Za-z]{3,10}" title="El apellido debe tener entre 3 y 10 letras">        
+        <br>
+        <label for="Email: ">Correo electronico:</label>
+        <input type="email" id="Email" name="Email" required placeholder="Ej: Esteban@gmail.com">
+        <br>
+        <label for="Contraseña: ">Contraseña:</label>
+        <input type="password" id="Contraseña" name="Contraseña" required placeholder="Ingrese una contraseña">
+        <br>
+        <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" id="Maculino" checked="Genero" value="Masculino"></legend>
+        <label for="Masculino">Masculino</label>
+        <input type="radio" id="Femenino" value="Femenino"></legend>
+        <label for="Femenino">Femenino</label>
+        </fieldset>
+        <br>
+        <label for="Date: ">Fecha de nacimiento:</label>
+        <input type="date" id="Fecha" name="Fecha"required>
+        <br>
+        <label for="Telefono: ">Telefono:</label>
+        <input type="Number" id="Telefono" name="Numero de telefono" required  maxlength="10" placeholder="Ej:3242192540">
+        <br>
+        
+        <h1>Selecciona un Regimen</h1>
+        <label for="Regimen">Regimen:</label>
+        <select>
+            <option value="Selected">Selecciona una opcion</option>
+            <option value="Tecnologo">Tecnologo</option>
+            <option value="Ingeniero">Ingeniero</option>
+            <option value="Ingeniero">Aprendiz</option>
+            <option value="Ingeniero">Tecnico</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Intereses</legend>
+            <input type="checkbox" id="Tecnología" checked="Intereses" value="Tecnología">
+            <label for="Tecnología">Tecnología</label>
+            <input type="checkbox" id="Viajes" value="Viajes">
+            <label for="Viajes">Viajes</label>
+            <input type="checkbox" id="Viajes" value="Viajes">
+            <label for="Deportes">Deportes</label>
+        </fieldset>
+       <br>
+       <label for="text">Comentarios</label>
+       <br>
+       <textarea name="Comentarios" id="Comentarios" rows="3" cols="50" placeholder="Ingrese alguan sugerencia u opinion sobre el formulario"></textarea>
+       <br>
+        <input type="submit" value="enviar">
+        <input type="submit" value="Limpiar">
+    </form>
+    
+</body>
+</html>

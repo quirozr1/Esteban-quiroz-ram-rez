@@ -1,0 +1,93 @@
+body {
+    /* background-color: rgb(137, 233, 73); */
+    font-family: cursive;
+    font-weight: 300;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    /* Muy utilizado en las Apps responsive 100% */
+    width: 100%;
+    height: 160px;
+    background-color: rgba(235, 180, 78, 0.883); /* El último número es transparencia */
+}
+
+nav ul li {
+    list-style-type: none; /* Quitar viñetas */
+    display: inline-block; /* Cada opción se ve una al lado de la otra */
+    transition: 0.8s all; /* Tiempo del movimiento al pasar el mouse por encima */
+    padding: 18px 20px;
+}
+
+nav ul li:hover {
+    background-color: #fff;
+}
+
+nav ul li a {
+    /* Agregar estilos a los hipervínculos */
+    text-decoration: none; /* Quitar la línea de los hipervínculos */
+    color: #000000;
+
+}
+
+a:visited {
+    /* Al ser visitado cambia a este color */
+    color: #140b0b;
+}
+
+a:active {
+    /* Al dar click en el enlace cambia a este color */
+    color: #e26f0e;
+}
+
+/* Ir al index y en esta línea se agrega al HTML
+   <a href="index.html"> <img class="img-logo" src=""> </a>
+*/
+
+/* Estilizamos el logo */
+.img-logo {
+    width: 100px;
+    padding-top: 30px;
+    padding-left: 5%;
+}
+
+nav ul {
+    padding-top: 90px;  /* Para que el menú baje un poco de arriba hacia abajo */
+    float: right;       /* Ubica los elementos del menú de manera flotante a la derecha */
+    /* volver al index y descomentar el logo principal */
+}
+
+.banner {
+    max-width: 100%;    /* Para que se ajuste al tamaño del body */
+}
+
+/* Estilo para la section featured */
+.featured {
+    background-color: rgba(240, 193, 107, 0.616); /* Color de fondo para la section */
+}
+
+/* Estilizar el video */
+.fp-video {
+    width: 55%;
+    padding: 2em; /* Se basa en el ancho de la letra de la tipografía del elemento padre */
+    overflow-y: visible;
+}
+
+/* Estilizar el article featured (el párrafo) */
+.ft-articulo {
+    width: 30%;
+    padding: 2em;
+    vertical-align: top;
+}
+
+/* Estilo general para todos los articulos */
+article {
+    padding: 30px;
+    background-color: rgba(240, 220, 107, 0.582);
+    margin: 20px 0; /* Opcional, para separar un poco los elementos del artículo */
+}
+
+article h1 {
+    border-bottom: solid thin black; /* Subrayar el título de h1 "Recetas del mundo" delgado */
+}

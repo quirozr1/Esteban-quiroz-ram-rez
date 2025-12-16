@@ -1,0 +1,6 @@
+Matriz= [[1,2,3,4,5], [6,7,8,9,10], [11,12,13,14,15]]
+del Matriz[1]
+Matriz.insert(2, [16,17,18,19,20])
+print(Matriz)
+Matriz.pop(0)
+print(Matriz)
